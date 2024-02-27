@@ -5,11 +5,11 @@ export function MovieLink({ movie }) {
   let [prefetch, setPrefetch] = useState('intent')
 
   // Don't prefetch cached movies
-  useEffect(() => {
-    if (sessionStorage.getItem(`movie-${movie.id}`)) {
-      setPrefetch('none')
-    }
-  })
+  // useEffect(() => {
+  //   if (sessionStorage.getItem(`movie-${movie.id}`)) {
+  //     setPrefetch('none')
+  //   }
+  // })
 
   let prefetchImage = () => {
     if (prefetch === 'none') return
@@ -19,10 +19,10 @@ export function MovieLink({ movie }) {
 
   return (
     <Link
-      to={`/movie/${movie.id}`}
-      prefetch={prefetch}
-      onMouseEnter={prefetchImage}
-      onFocus={prefetchImage}
+      to={`movie/${movie.id}`}
+      // prefetch={prefetch}
+      // onMouseEnter={prefetchImage}
+      // onFocus={prefetchImage}
     >
       {movie.title}
     </Link>

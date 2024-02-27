@@ -20,7 +20,8 @@
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
     "react": "^18.3.0-canary-c5b937576-20231219",
-    "react-dom": "^18.3.0-canary-c5b937576-20231219"
+    "react-dom": "^18.3.0-canary-c5b937576-20231219",
+    "remix-client-cache": "^1.0.1"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20230518.0",
